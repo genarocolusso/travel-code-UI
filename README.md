@@ -1,5 +1,6 @@
 ## Travel UI code /css study UI design 
-
+Based on  [dribbble](https://dribbble.com/shots/10619486-Online-Travel-Agency-Platform/attachments/2363686?mode=media "dribbble") 
+![](https://github.com/genarocolusso/travel-code-UI/blob/master/preview.jpg?raw=true)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
