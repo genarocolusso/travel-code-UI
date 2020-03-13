@@ -1,0 +1,120 @@
+
+ 
+  
+  .travel-wrapper{
+    border-radius: var(--radius);
+    color: var(--main-color);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center; 
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  
+
+  p.travelHour {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+p.travelCity {
+    font-size: 16px;
+}
+
+p.travelDate {
+    font-size: 13px;
+}
+
+.startInfos p, .endInfos p {
+    margin-bottom: 2px;
+}
+
+.endInfos{
+  text-align: right;
+}
+
+.startTravel, .endTravel {
+    display: flex;
+    align-items: center;
+}
+
+.travel-wrapper  .airport{
+  
+  width: 45px;
+  height: 45px;
+  background: #4749a0;
+  border-radius: 50%; 
+}
+.travel-wrapper .startTravel  .airports  {
+  
+  margin-right: 24px;
+}
+
+ 
+.travelLine {
+  width: 500px;
+  
+  margin-bottom: 26px;
+}
+
+.line {
+  border-bottom: 1px dotted;
+  position: relative; 
+}
+.line::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 50%;
+  left: 5px;
+  top: -2px;
+  box-shadow: 0px 0px 0px 7px  var(--main-color);
+}
+.line::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background: var(--main-color);
+  border-radius: 50%;
+  right: 5px;
+  top: -2px;
+  box-shadow: 0px 0px 0px 7px var(--inactive-color);
+}
+.stops {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 10px;
+}
+.duration { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+button.btn.selectPrice {
+  font-size: 16px;
+  width: 160px;
+  
+}
+.priceSelect .price{
+  margin-bottom: 4px;
+  padding-left: 12px;
+}
+.priceSelect{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

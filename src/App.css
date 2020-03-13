@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+ @import url(Global.css);
+ 
+.travel-container{
+  max-width: 90%;
+  margin: 0px auto;
+  display: grid;
+  
+  margin-top: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-card{
+  background-color: white;
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  border-radius: var(--radius);
+  
+  padding: 20px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-avatar img {
+  height: 100%;
+}
+.profile-card{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  align-items: center;
+}
+.user-info-card {
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center; 
+}
+.greetings {
+  font-size: 16px;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold; 
+}
+.user-names{ 
+}
+
+.expand-menu {
   display: flex;
   flex-direction: column;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  line-height: 14px;
+  width: 40px;
+  height: 40px;
+}
+
+.expand-menu span {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+/* results */
+
+p.numbers{
+  color: var(--main-color);
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.cards-results{
+margin-top: 8px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-column-gap: 20px;
+}
+ 
+
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 12px;
+  display: flex;
+}
+.price span {
+  font-size: 12px;
+  margin-top: 7px;
+  margin-right: 2px;
+  display: flex;
+  font-weight: 400;
+  align-items: flex-start;
+}
+
+.price span.small{
+  
+  display: flex;
+  font-weight: 400;
+  align-items: flex-end;
+  margin-bottom: 7px;
+  margin-left: 2px;
+}
+
+button.btn  {
+ 
+  outline: 0;
+  border: 0;
+  padding: 12px 24px;
+  background-color: var(--button-color);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 8px;
 }

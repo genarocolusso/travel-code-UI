@@ -1,0 +1,38 @@
+
+.cards-results .best-results-card{
+  background-color: white;
+  color: var(--main-color);
+  display: flex;
+  align-items: center; 
+  
+  border-radius: var(--radius);
+  padding: 30px;
+  cursor: pointer;
+
+}
+.cards-results .best-results-card--active{
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  align-items: center; 
+  
+  border-radius: var(--radius);
+  padding: 30px;
+  
+  cursor: pointer;
+
+}
+
+.best-results-card .price, .best-results-card--active .price{
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+.best-results-card .subtitle, .best-results-card--active  .subtitle{
+  font-size: 12px;
+}
+.best-results-card .title, .best-results-card--active  .title{
+  font-size: 14px;
+  font-weight: bold;
+}
+ 
